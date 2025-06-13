@@ -1,0 +1,170 @@
+.main{
+          flex: 1;
+          min-height: 100vh;
+          padding-bottom: 15vh;
+          position: relative;
+          background-color: ;
+
+
+}
+.main .nav{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+          font-size: 22px;
+          color: rgb(59, 59, 59);
+}
+.user-image{
+          width: 65px;
+          border-radius: 50px;
+}
+.main-container{
+          max-width: 900px;
+          margin: auto;
+}
+.greet{
+          margin: 50px 0px;
+          font-size: 56px;
+          font-weight: 500px;
+          padding: 20px;
+          color: rgb(163, 158, 158);
+}
+.main-container .greet span{
+          background: -webkit-linear-gradient(16deg,#2768ff, #105c7d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+}
+.cards{
+
+          display: grid;
+          grid-template-columns:repeat(auto-fill,minmax(180px,1fr)) ;
+          gap: 15px;
+          padding: 20px;
+
+}
+.card{
+          height: 200px;
+          padding: 15px;
+          border-radius: 10px;
+          position: relative;
+          cursor: pointer;
+          background-color:rgb(109, 185, 231) ;
+}
+.card img{
+          width: 35px;
+          padding: 5px;
+          background-color: white;
+         border-radius: 20px;
+         position: absolute;
+         bottom: 10px;
+         right: 10px;
+}
+.card p{
+          color: rgb(46, 45, 45);
+}
+
+.cards .card:hover{
+          background-color: rgb(175, 170, 170);
+}
+/*Bottom section */
+
+.main-bottom{
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          max-width: 900px;
+          padding: 0px 20px;
+          margin: auto;
+}
+.search {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          padding: 10px 20px;
+          background-color:rgb(229, 229, 236) ;
+          border-radius: 50px;
+          width: 870px;
+          margin-left: 220px;
+          margin-bottom: 30px;
+          color: white;
+        }
+        
+.search img{
+          width: 24px;
+          cursor: pointer;
+}
+
+.search input{
+          background: transparent;
+          flex: 1;
+          border: none;
+          outline: none;
+          padding: 8px;
+          font-size: 14px;
+}
+.search div{
+          display: flex;
+          align-items: center;
+          gap: 4px;
+}
+.responseResult{
+          padding: 0 5%;
+          max-height: 70vh;
+          overflow-y: scroll;
+}
+.responseResult  ::-webkit-scrollbar{
+          display: none;
+}
+.resultTitle{
+        margin: 40px 0px;
+        display: flex;
+        align-items: center;
+        gap: 20px;  
+}
+.responseResult img{
+          width: 60px;
+          border-radius: 50%;
+}
+.result-data{
+          align-items: start;
+          display: flex;
+          gap: 20px;
+}
+.result-data p{
+          font-size: 17px;
+          font-weight: 300px;
+          line-height: 1.8 px;
+
+
+}
+@media (max-width: 600px) {
+          .search {
+            flex-direction: column; /* Stack elements vertically */
+            width: 90%; /* Take up most of the screen */
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            padding: 15px; /* Add some padding */
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            
+          }
+        
+          .search input {
+            width: 100%; /* Full width for input */
+            font-size: 16px; /* Slightly larger for better readability */
+            padding: 10px; /* Adjust padding */
+            margin-bottom: 10px; /* Add space below the input */
+          }
+        
+          .search div {
+            justify-content: center; /* Center the icons */
+            gap: 10px; /* Space between icons */
+          }
+        
+          .search img {
+            width: 20px; /* Adjust icon size */
+          }
+        }

@@ -1,0 +1,102 @@
+.sidebar{
+          min-height: 100vh;
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-color: rgba(8, 73, 105, 0.267);
+          padding: 15px 25px;
+          width: 190px;
+}
+.sidebar img {
+          width:20px;
+}
+.sidebar .Menue{
+          display: block;
+          margin-left: 10px;
+          cursor: pointer;
+}
+ .sidebar .new-chat{
+          margin-top: 30px;
+          display: inline-block;     
+          cursor: pointer;
+          display: inline-flex;
+          flex-direction: row;
+        
+         
+}
+.sidebar .new-chat img{
+          width: 25px;
+          height: 30px;
+          margin-right: 5px;
+}
+.new-chat p{
+          padding: 8px 8px;
+          width: 120px;
+          height: 30px;
+          background-color: azure;
+          border-radius: 35px;
+          font: 8px;
+          color: grey;
+          align-items: center;
+          
+}
+
+.sidebar .recent{
+          display: flex;
+          flex-direction: column;
+}
+
+.recent-title{
+          margin-top: 30px;
+          margin-bottom: 10px;
+}
+.recent-entry{
+          margin-top: 10px;
+          display: inline-block;
+          align-items: center;
+          gap: 10px;
+          padding: 5px 8px;
+          width: 170px;
+          height: 30px;
+          border-radius: 35px;
+          font: 8px;
+          color: rgb(37, 36, 36);
+        
+          cursor: pointer;
+          display: inline-flex;
+          flex-direction: row;
+
+}
+
+
+.bottom-item{
+          margin-top: 10px;
+          display: inline-block;
+         
+          gap: 10px;
+          padding: 5px 8px;
+          width: 150px;
+          height: 30px;
+          border-radius: 35px;
+          font: 8px;
+          color: rgb(37, 36, 36);
+        
+          cursor: pointer;
+          display: flex;
+          flex-direction:column;
+
+}
+
+.content{
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+
+}
+
+@media (max-width:600px) {
+          .sidebar{
+                    display: none;
+          }
+          
+}
