@@ -72,7 +72,7 @@ function Main() {
                 <img src={assets.message_icon} alt="Message Icon" />
               </div>
               <div className="card">
-                <p>Give me the Python code for an LMS system</p>
+                <p>Give me the Python code for create LLM</p>
                 <img src={assets.code_icon} alt="Code Icon" />
               </div>
             </div>
